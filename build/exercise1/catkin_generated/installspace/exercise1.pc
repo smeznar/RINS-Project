@@ -1,0 +1,8 @@
+prefix=/home/sebastian/ROS/install
+
+Name: exercise1
+Description: Description of exercise1
+Version: 0.0.0
+Cflags: -I/home/sebastian/ROS/install/include
+Libs: -L/home/sebastian/ROS/install/lib 
+Requires: message_runtime
