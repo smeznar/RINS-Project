@@ -1,0 +1,13 @@
+<launch>
+  <param name="move_type" value="nothing yet" type="string"/>
+  <param name="move_time" value="0" type="int"/>
+	
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"  output="screen"></node>
+  <node pkg="exercise2" type="move_service.py" name="service_node"  output="screen"></node>
+
+  <node pkg="exercise2" type="movement" name="movement"  output="screen">
+    <remap from="cmd_vel" to="/turtle1/cmd_vel" />
+  </node>
+
+</launch>
+
