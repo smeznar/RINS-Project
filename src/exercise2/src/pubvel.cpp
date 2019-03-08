@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 
 	ros::init(argc, argv, "publish_velocity");
 	ros::NodeHandle nh;
-	//ros::NodeHandle pnh("~");
+	ros::NodeHandle pnh("~");
 
 	//create a publisher object.
 	ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("cmd_vel", 1000);
@@ -21,16 +21,13 @@ int main(int argc, char *argv[])
 	//Loop at 2Hz until the node is shutdown.
 	ros::Rate rate(2);
 
-	//pnh.getParam("scale_linear", scale_linear);
-	//pnh.getParam("scale_angular", scale_angular);
-
-	ros::param::get("~scale_linear", scale_linear);
-	ros::param::get("~scale_angular", scale_angular);
+	pnh.getParam("scale_linear", scale_linear);
+	pnh.getParam("scale_angular", scale_angular);
 
 	while(ros::ok()){
 		geometry_msgs::Twist msg;
 		msg.linear.x = scale_linear * (double(rand())/double(RAND_MAX));
-		msg.angular.z = scale_angular * 2 * (double(rand())/double(RAND_MAX)-0.5);
+		msg.angular.z = scale_angular * 2 * (double(rand())/double(RAND_MAX)-1);
 
 		pub.publish(msg);
 
