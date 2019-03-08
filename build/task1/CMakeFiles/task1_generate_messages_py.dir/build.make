@@ -55,6 +55,7 @@ include task1/CMakeFiles/task1_generate_messages_py.dir/progress.make
 
 task1/CMakeFiles/task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/_Test.py
 task1/CMakeFiles/task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/__init__.py
+task1/CMakeFiles/task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/srv/__init__.py
 
 
 /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/_Test.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
@@ -67,9 +68,15 @@ task1/CMakeFiles/task1_generate_messages_py: /home/sebastian/ROS/devel/lib/pytho
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sebastian/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for task1"
 	cd /home/sebastian/ROS/build/task1 && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg --initpy
 
+/home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/srv/__init__.py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/_Test.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sebastian/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for task1"
+	cd /home/sebastian/ROS/build/task1 && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/srv --initpy
+
 task1_generate_messages_py: task1/CMakeFiles/task1_generate_messages_py
 task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/_Test.py
 task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/msg/__init__.py
+task1_generate_messages_py: /home/sebastian/ROS/devel/lib/python2.7/dist-packages/task1/srv/__init__.py
 task1_generate_messages_py: task1/CMakeFiles/task1_generate_messages_py.dir/build.make
 
 .PHONY : task1_generate_messages_py

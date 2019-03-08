@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- Mode: Python; indent-tabs-mode: nil; c-basic-offset: 2; tab-width: 2 -*- *
 
 import sys
 import rospy
@@ -17,17 +18,29 @@ def moveT(shape, time):
 
 if __name__ == "__main__":
 	rospy.init_node('client_node')
-	'''
-	if len(sys.argv) == 3:
-		s = sys.argv[1]
-		t = int(sys.argv[2])
-	else:
-		print "not enough arguments"
-		sys.exit(1)
-	'''
-	s = rospy.get_param("move_type")
-	t = rospy.get_param("move_time")
-	print "sending %s and %d"%(s ,t)
-	print "result: %s"%(moveT(s, t))
+	shapes = ["rectangle","triangle","circle","random"]
+
+	r = rospy.Rate(0.025)
+	while not rospy.is_shutdown():
+		shape = shapes[random.randint(0,3)]
+		time = random.randint(1,30)
+		print "sending %s and %d"%(shape ,time)
+		print "result: %s"%(moveT(shape, time))
+		r.sleep()
+
+	#if len(sys.argv) == 3:
+	#	s = sys.argv[1]
+	#	t = int(sys.argv[2])
+	#else:
+	#	print "not enough arguments"
+	#	sys.exit(1)
+	
+  #s = "circle"
+  #t = 10
+	
+	#s = rospy.get_param("move_type")
+	#t = rospy.get_param("move_time")
+	#print "sending %s and %d"%(s ,t)
+	#print "result: %s"%(moveT(s, t))
   
   
