@@ -1,0 +1,8 @@
+prefix=/home/sebastian/ROS/install
+
+Name: exercise2
+Description: Description of exercise2
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sebastian/ROS/install/lib 
+Requires: 

@@ -1,2 +1,2 @@
-exercise1:task1
+exercise1:exercise2:task1
 -DCATKIN_DEVEL_PREFIX=/home/sebastian/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/sebastian/ROS/install -G Unix Makefiles

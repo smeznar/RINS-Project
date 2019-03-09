@@ -271,6 +271,12 @@ exercise1_BINARY_DIR:STATIC=/home/sebastian/ROS/build/exercise1
 //Value Computed by CMake
 exercise1_SOURCE_DIR:STATIC=/home/sebastian/ROS/src/exercise1
 
+//Value Computed by CMake
+exercise2_BINARY_DIR:STATIC=/home/sebastian/ROS/build/exercise2
+
+//Value Computed by CMake
+exercise2_SOURCE_DIR:STATIC=/home/sebastian/ROS/src/exercise2
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake
 
@@ -288,6 +294,9 @@ gennodejs_DIR:PATH=/opt/ros/kinetic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/kinetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/kinetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/sebastian/ROS/build/gtest
@@ -352,6 +361,9 @@ roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake

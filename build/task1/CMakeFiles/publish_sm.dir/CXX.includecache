@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/sebastian/ROS/devel/include/task1/Test.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/sebastian/ROS/src/task1/src/publish_simple_message_node.cpp
 ros/ros.h
 -
@@ -220,6 +236,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/kinetic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/kinetic/include/ros/message_traits.h
