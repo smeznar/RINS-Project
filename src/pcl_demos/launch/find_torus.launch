@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="pcl_demos" type="torus_finder_nodelet" name="torus_finder_nodelet">s
+        <remap from="input" to="/camera/depth_registered/points"/>
+    </node>
+
+</launch>
+

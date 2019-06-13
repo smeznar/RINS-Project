@@ -1,0 +1,9 @@
+float32 x_ring
+float32 y_ring
+float32 x_pred
+float32 y_pred
+float32 ori_pred
+int32 r
+int32 g
+int32 b
+string color

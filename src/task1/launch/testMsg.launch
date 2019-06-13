@@ -1,0 +1,7 @@
+<launch>
+
+  <node name="publisher" pkg="task1" type="publish_custom" output="screen"/>
+
+  <node name="subscriber" pkg="task1" type="subscribe_custom" output="screen"/>
+
+</launch>
